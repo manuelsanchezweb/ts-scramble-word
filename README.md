@@ -1,3 +1,3 @@
 # Readme
 
-Deploy:
+Deploy: https://ts-scramble-word.vercel.app/
