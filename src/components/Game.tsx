@@ -30,7 +30,7 @@ const getRandomWordPair = (): WordPair => {
 
 const initialState: GameState = {
   wordPair: getRandomWordPair(),
-  userGuess: '',
+  userGuess: 'example',
   isCorrect: null,
   attempts: 0,
 }
@@ -38,6 +38,7 @@ const initialState: GameState = {
 function gameReducer(state: GameState, action: GameAction): GameState {
   switch (action.type) {
     case 'SET_GUESS':
+      console.log('SET_GUESS', action.payload)
       return { ...state, userGuess: action.payload }
     case 'CHECK_ANSWER':
       const isCorrect =
